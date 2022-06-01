@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"mach_bao_mat\startup_stm32f103xb.o"
+"mach_bao_mat\lcd.o"
+"mach_bao_mat\flash.o"
+"mach_bao_mat\keypad.o"
+"mach_bao_mat\main.o"
+"mach_bao_mat\stm32f1xx_it.o"
+"mach_bao_mat\stm32f1xx_hal_msp.o"
+"mach_bao_mat\stm32f1xx_hal_gpio_ex.o"
+"mach_bao_mat\stm32f1xx_hal_i2c.o"
+"mach_bao_mat\stm32f1xx_hal.o"
+"mach_bao_mat\stm32f1xx_hal_rcc.o"
+"mach_bao_mat\stm32f1xx_hal_rcc_ex.o"
+"mach_bao_mat\stm32f1xx_hal_gpio.o"
+"mach_bao_mat\stm32f1xx_hal_dma.o"
+"mach_bao_mat\stm32f1xx_hal_cortex.o"
+"mach_bao_mat\stm32f1xx_hal_pwr.o"
+"mach_bao_mat\stm32f1xx_hal_flash.o"
+"mach_bao_mat\stm32f1xx_hal_flash_ex.o"
+"mach_bao_mat\stm32f1xx_hal_exti.o"
+"mach_bao_mat\stm32f1xx_hal_tim.o"
+"mach_bao_mat\stm32f1xx_hal_tim_ex.o"
+"mach_bao_mat\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Mach_bao_mat\Mach_bao_mat.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Mach_bao_mat.map" -o Mach_bao_mat\Mach_bao_mat.axf
